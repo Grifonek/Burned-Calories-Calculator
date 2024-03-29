@@ -1,13 +1,112 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+  width: 30rem;
+  padding: 1rem;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  border-radius: 3rem;
+}
+
+.App div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.App div h3 {
+  margin: 0;
+  margin-top: 1rem;
+}
+
+h1 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.2rem;
+}
+
+h3 {
+  color: white;
+}
+
+select,
+input[type="number"],
+input[type="text"] {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(63, 94, 251);
+  font-weight: bold;
+  text-align: center;
+}
+
+select {
+  font-weight: bold;
+}
+
+input[type="number"]::placeholder {
+  color: transparent;
+}
+
+input[type="number"]:focus::placeholder {
+  color: transparent;
+}
+
+input[type="number"]:disabled {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(63, 94, 251);
+  border: none;
+  height: 3rem;
+  width: 10rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.result {
+  font-size: 2rem;
+}
+
+.result h3 {
+  margin-bottom: 0;
+}
+
+.result input {
+  font-size: 2rem;
+  width: 40%;
 }
